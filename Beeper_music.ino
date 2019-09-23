@@ -2,7 +2,7 @@
 /*
   Arduino beeper_music - Library for decoding a notes for beeper.
   Created by Dima Tsvetkov, 2019-09-22.
-  Released into the public domain.
+  GNU General public license V3
 */
 
 #define BEEPER_PIN 4          // Beeper's pin on Arduino
