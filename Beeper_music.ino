@@ -6,17 +6,18 @@
 */
 
 #define BEEPER_PIN 4            // Beeper's pin on Arduino
-#define TEMPO_NOTE = 4          // 1/4 note BPM
+#define TEMPO_NOTE 4          // 1/4 note BPM
 #define BPM 240                 // 1/4-note beats per minute
 #define PAUSE_LENGTH 100        // Pause to separate beeps in milliseconds
-#define REST_LENGTH = 8         // Length of the rest note, 8 = Eighth rest
+#define REST_LENGTH 8         // Length of the rest note, 8 = Eighth rest
 
-const byte melody[] { // Darude - Sandstorm
+const byte melody[] { // Sandstorm
 // 4/4 common time signature
-// 0 = eighth/quaver rest
+// 0 = rest note (length defined in code, default = 1/8 Eighth rest)
 // 8 = 1/8 note / quaver)
 // 4 = 1/4 note / crotchet)
 // 2 = 1/2 note / minim)
+// 1 = full note / semibreve)
 
 // |- - - -   - - - -| |- - - -   - - - -|
     8,8,8,8,  2,        0,0,0,0,  0,0,4,
@@ -70,7 +71,7 @@ void runNote() {
       currentNote = currentNote+1;
     }
     else {
-      noteLength = 60000/(BPM/TEMPO_NOTE)/NOTES_PER_MEASURE;
+      noteLength = 60000/(BPM/TEMPO_NOTE)/REST_LENGTH;
       digitalWrite(BEEPER_PIN, LOW);
       timer = millis();
       currentNote = currentNote+1;
