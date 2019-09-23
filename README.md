@@ -54,12 +54,13 @@ _Time signature_ is not involved in the code, as you define BPM and Note. The re
 #define TEMPO_NOTE = 4          // 1/4 note (crotchet) BPM
 #define BPM 240                 // beats per minute for the tempo note defined above
 ```
-
 Now we can compare settings and numerical notation with the real notes:
 
 ![Note example](https://raw.githubusercontent.com/dimamedia/arduino_beeper_music/master/Notation%20example.png)
 
 You see in the notes that there the tempo of the 1/4-note is 240 BPM. Also numerical annotation above each note is the same as in the array above.
+
+At the end of the array there is a end mark _100_. The program needs it to detect the end of the array and to start from the beginning.
 
 Controller does not do breaks between beeps. So the code adds them automatically by replacing the ends of each beeping note with the silence with a defined length:
 
