@@ -58,7 +58,7 @@ Now we can compare settings and numerical notation with the real notes:
 
 ![Note example](https://raw.githubusercontent.com/dimamedia/arduino_beeper_music/master/Notation%20example.png)
 
-You see in the notes that there the tempo of the 1/4-note is 240 BPM. Also numerical annotation above each note is the same as in the array above.
+You see in the notes that there the tempo of the 1/4-note is 240 BPM. Also numerical annotation above each note is the same as in the array above. Also eghth rests are shown in the notes as zeroes in the array.
 
 At the end of the array there is a end mark _100_. The program needs it to detect the end of the array and to start from the beginning.
 
