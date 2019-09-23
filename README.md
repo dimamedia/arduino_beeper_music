@@ -57,7 +57,7 @@ _Time signature_ is not involved in the code, as you define BPM and Note. The re
 
 Now we can compare settings and numerical notation with the real notes:
 
-![Note example](github.com/dimamedia/arduino_beeper_music/Notation example.png)
+![Note example](https://raw.githubusercontent.com/dimamedia/arduino_beeper_music/master/Notation%20example.png)
 
 You see in the notes that there the tempo of the 1/4-note is 240 BPM. Also numerical annotation above each note is the same as in the array above.
 
