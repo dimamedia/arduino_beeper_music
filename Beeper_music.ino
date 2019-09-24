@@ -1,6 +1,6 @@
 
 /*
-  Arduino beeper_music - Library for decoding a notes for beeper.
+  Arduino beeper_music - Decoding a notes for beeper.
   Created by Dima Tsvetkov, 2019-09-22.
   GNU General public license V3
 */
